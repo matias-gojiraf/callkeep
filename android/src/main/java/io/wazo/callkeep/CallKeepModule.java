@@ -597,7 +597,7 @@ public class CallKeepModule {
             builder.setIcon(icon);
         }
 
-        Log.d(TAG, _settings.getBoolean("selfManaged"));
+        Log.d(TAG, "Self managed: ", String.valueOf(_settings.getBoolean("selfManaged")));
 
         if (_settings != null && _settings.hasKey("selfManaged") && _settings.getBoolean("selfManaged")) {
             builder.setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED);
